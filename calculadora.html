@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="stylecal.css">
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- fonte h1 e h2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap" rel="stylesheet">
+    <!-- fonte p e result-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+<!-- fonte button, input e label -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Calculadora de IMC</h1>
+    <h2>O que é o IMC?</h2>
+    <p>
+        IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o
+        peso ideal de cada pessoa.
+
+        O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado.
+        Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
+
+        Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela.
+        Importante: siga os exemplos e use pontos como separadores.</p>
+    <div id="calculator">
+        <label for="weight">Peso (kg):</label>
+        <input type="number" id="weight" required>
+        <label for="height">Altura (cm):</label>
+        <input type="number" id="height" required>
+        <button class="estilo" onclick="calculateIMC()">Calcular</button>
+        <div id="result"></div>
+    </div>
+<!-- link js -->
+    <script src="calculadora.js"></script>
+</body>
+
+</html>
